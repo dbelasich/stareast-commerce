@@ -1,0 +1,15 @@
+{
+  "name": "stareast-commerce",
+  "version": "1.0.0",
+  "description": "Simple in-memory e-commerce API with JWT auth and checkout",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0"
+  }
+}
