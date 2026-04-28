@@ -4,12 +4,20 @@
   "description": "Simple in-memory e-commerce API with JWT auth and checkout",
   "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "test:path-coverage": "mocha \"test/pathCoverage/**/*.spec.js\" --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=path-coverage,quiet=true",
+    "test": "npm run test:path-coverage"
   },
   "dependencies": {
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "swagger-ui-express": "^5.0.1",
     "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3",
+    "mochawesome": "^7.1.3",
+    "supertest": "^7.1.0"
   }
 }
